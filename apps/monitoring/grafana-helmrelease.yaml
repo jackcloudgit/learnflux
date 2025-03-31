@@ -4,6 +4,7 @@ metadata:
   name: grafana
   namespace: monitoring
 spec:
+  interval: 5m0s # Reconcile every 5 minutes
   chart:
     spec:
       chart: grafana
@@ -14,4 +15,4 @@ spec:
         namespace: flux-system
   values:
     adminUser: admin
-    adminPassword: admin123 # Change this to a secure password.
+    adminPassword: admin123 # Change to a secure password
