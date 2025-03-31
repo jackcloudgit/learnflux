@@ -4,7 +4,7 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - apps-kustomization.yaml
-- ../../monitoring/prometheus-helmrelease.yaml
-- ../../monitoring/grafana-helmrelease.yaml
+- ../../apps/monitoring/prometheus-helmrelease.yaml
+- ../../apps/monitoring/grafana-helmrelease.yaml
 - ../../clusters/minikube/flux-system/prometheus-helmrepository.yaml
 - ../../clusters/minikube/flux-system/grafana-helmrepository.yaml
