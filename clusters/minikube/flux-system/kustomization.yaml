@@ -8,3 +8,6 @@ resources:
 - ../../../apps/monitoring/grafana-helmrelease.yaml
 - ../../minikube/flux-system/prometheus-helmrepository.yaml
 - ../../minikube/flux-system/grafana-helmrepository.yaml
+- ../../minikube/flux-system/capacitor-repo.yaml
+- ../../../apps/capacitor/helmrelease.yaml
+- ../../../apps/capacitor/namespace.yaml

@@ -1,0 +1,9 @@
+# fluxcd/infrastructure/sources/helm-capacitor.yaml
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: HelmRepository
+metadata:
+  name: capacitor
+  namespace: flux-system
+spec:
+  interval: 10m
+  url: https://charts.gimlet.io
