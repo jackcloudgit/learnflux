@@ -1,0 +1,26 @@
+# fluxcd/apps/capacitor/helmrelease.yaml
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: capacitor
+  namespace: capacitor
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: capacitor
+      version: 0.16.0 # Check for latest release
+      sourceRef:
+        kind: HelmRepository
+        name: capacitor
+        namespace: flux-system
+  values:
+    # Optional: customize based on your needs
+    ingress:
+      enabled: true
+      className: nginx
+      hosts:
+        - host: capacitor.mydomain.com
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
